@@ -1,48 +1,36 @@
 "use strict";
 
-const numberOfFilms = +prompt("skoljko filjmov vi uzhe posmotreli?", ""); //+ zīme pirms prompt pārvērš saņemto par skaitli
+let num = 20;
 
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
+function showFirstMessage(text) {
+    console.log(text);
+    num = 10;
+    console.log(num);
+}
+
+showFirstMessage("Hello world!");
+console.log(num);
+
+function calc(a, b) {
+        return (a+b);
+}
+
+console.log(calc(4, 3));
+console.log(calc(5, 6));
+console.log(calc(10, 6));
+
+function ret() {
+    let num = 50;
+    return num;
+}
+
+const anotherNum = ret();
+console.log (anotherNum);
+
+const logger = function(){
+console.log("Hello");
 };
 
-// const   a = prompt("Odin iz poslednih prosmotrennih filjmov?", ""),
-//         b = prompt("Na skoljko ocenite ego?", ""),
-//         c = prompt("Odin iz poslednih prosmotrennih filjmov?", ""),
-//         d = prompt("Na skoljko ocenite ego?", "");
+logger();
 
-// personalMovieDB[a] = b;
-// personalMovieDB[c] = d;
-
-for (let i = 0; i <2; i++){
-    const   a = prompt("Odin iz poslednih prosmotrennih filjmov?", ""),
-            b = prompt("Na skoljko ocenite ego?", "");
-
-            if (a != null && b != null && a !="" && b!="" && a.length<50) {   //ja a nav vienāds ar null (atcēla ievadi) un a nav vienāds ar tukšumu (tukšas "" pēdiņas) un a garums nav garāks par 50
-            personalMovieDB[a] = b;
-            console.log("Done");
-
-            } else {
-                console.log("error");
-                i--;    //ja noteikumi nav izpildīti, šis ekrements atgriež atpakaļ ciklu
-            }
-
-
-}
-if  (personalMovieDB<10) {
-    console.log("Prosmotreno nalo filjmov");
-    } else if (personalMovieDB.count>=10 &&personalMovieDB.count<30) {
-    console.log("Vi klassnij zritelj");
-    } else if (personalMovieDB.count>=30) {
-    console.log("Vi kinoman!");
-    } else {
-        console.log("Proizoshla oshibka!!!");
-    }
-
-
-
-console.log(personalMovieDB);
+const calc = (a, b) => {return a+b};
