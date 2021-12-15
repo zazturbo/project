@@ -14,22 +14,25 @@ const options = {
 };
 options.makeTest();
 
-console.log(options.name);
-delete options.name;
-console.log(options);
-let counter = 0;
-for (let key in options) {
-    if (typeof(options[key]) === 'object') {
-        for (let i in options[key]) {
-            console.log(`svoistva ${i} imeet znachenie ${options[key][i]}`);
-            counter++;
-        } 
-     } else {
-    console.log(`svoistva ${key} imeet znachenie ${options[key]}`);
-    counter++;
-     }
-    }
+const {border, bg} = options.colors;
+console.log(border);
 
-console.log(counter);
+// console.log(options.name);
+// delete options.name;
+// console.log(options);
+// let counter = 0;
+// for (let key in options) {
+//     if (typeof(options[key]) === 'object') {
+//         for (let i in options[key]) {
+//             console.log(`svoistva ${i} imeet znachenie ${options[key][i]}`);
+//             counter++;
+//         } 
+//      } else {
+//     console.log(`svoistva ${key} imeet znachenie ${options[key]}`);
+//     counter++;
+//      }
+//     }
 
-console.log(Object.keys(options).length);
+// console.log(counter);
+
+// console.log(Object.keys(options).length);
