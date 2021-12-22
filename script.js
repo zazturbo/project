@@ -1,17 +1,34 @@
 'use strict';
 
-const produkti = {
-    āboli: "auglis",
-    burkāni: "dārzenis",
-    biezpiens: "piena produkts",
-    kartupeļi: "dārzenis",
-    dzērieni: {
-        fanta: "gāzēts dzēriens",
-        sula: "negāzēts dzēriens",
-        limonāde: "gāzēts dzēriens"
-    }
-};
-// console.log(produkti);
+const arr = [1, 12, 93, 6, 38];
+arr.sort(compareNum);
+console.log(arr);
 
-const{fanta, sula, limonāde} = produkti.dzērieni;
-console.log(limonāde);
+function compareNum (a, b) {
+    return a-b;
+}
+// arr[99] = 0;
+// console.log(arr.length);
+// console.log(arr);
+
+// arr.forEach(function(item, i, arr) {
+//     console.log(`${i}: ${item} vnutri massiva ${arr}`);
+// });
+
+// // arr.pop();
+// arr.push(10);
+
+// console.log(arr);
+
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
+
+// for (let value of arr) {
+//     console.log(value);
+// }
+
+// const str = prompt(", ");
+// const products = str.split(", ");
+// products.sort();
+// console.log(products.join('; '));
