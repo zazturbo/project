@@ -21,4 +21,12 @@ const auto = {
 
 console.log(auto);
 
+auto.bmw = 525;
+console.log(auto);
 
+auto.bmw = {
+    luxus: 525,
+    jauda: 530,
+    modelis: 550
+};
+console.log(auto);
