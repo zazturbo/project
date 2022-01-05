@@ -1,32 +1,30 @@
 "use strict";
 
-const auto = {
-    bmw: 'luxus',
-    audi: 'luxus',
-    mb: 'luxus',
-    mazda: 'medium'
-};
- console.log(auto);
+// let a = 150;
+// let b = 2;
+//  let c;
 
- auto.renault = 'economy';
- console.log(auto);
+//  c = a+b;
 
- const tachjka = 'ford';
+//  console.log(c);
 
- auto[tachjka] = 'economy';
+//  a = 5;
 
- console.log(auto);
+//  c=a+b;
+//  console.log(c);
 
- delete auto.mb;
 
-console.log(auto);
+let a=2;
+let b=9;
 
-auto.bmw = 525;
-console.log(auto);
+function minus(a, b) {
+    const c=b-a;
+    console.log(c);
+}
 
-auto.bmw = {
-    luxus: 525,
-    jauda: 530,
-    modelis: 550
-};
-console.log(auto);
+minus(a,b);
+
+a= 100;
+b= 50;
+
+minus(a,b);
