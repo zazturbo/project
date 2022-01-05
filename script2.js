@@ -1,5 +1,6 @@
 "use strict";
 
+
 // let a = 150;
 // let b = 2;
 //  let c;
@@ -14,17 +15,41 @@
 //  console.log(c);
 
 
-let a=2;
-let b=9;
+// let a=2;
+// let b=9;
 
-function minus(a, b) {
-    const c=b-a;
-    console.log(c);
+// function sum(a,b) {
+//     const c=b-a;
+//     console.log(c);
+// }
+
+// sum(a,b);
+
+// a= 100;
+// b= 50;
+
+// sum(a,b);
+
+function myFn(a,b) {
+    let c;
+    a=a+5;
+    c=a+b;
+    return c;
 }
 
-minus(a,b);
+myFn(1, 2);
 
-a= 100;
-b= 50;
+// const personOne = {
+//     name: 'Bob',
+//     age: 21
+// };
 
-minus(a,b);
+// function increasePersonAge(person) {
+//     const updatedPerson = Object.assign({}, person);
+//     updatedPerson.age += 1;
+//     return updatedPerson;
+// }
+
+// const updatedPerson = increasePersonAge(personOne);
+// console.log(personOne.age);
+// console.log(updatedPerson.age);
