@@ -1,55 +1,9 @@
 "use strict";
 
-
-// let a = 150;
-// let b = 2;
-//  let c;
-
-//  c = a+b;
-
-//  console.log(c);
-
-//  a = 5;
-
-//  c=a+b;
-//  console.log(c);
-
-
-// let a=2;
-// let b=9;
-
-// function sum(a,b) {
-//     const c=b-a;
-//     console.log(c);
-// }
-
-// sum(a,b);
-
-// a= 100;
-// b= 50;
-
-// sum(a,b);
-
-function myFn(a,b) {
-    let c;
-    a=a+5;
-    c=a+b;
-    return c;
+function printMyName() {
+    console.log('Bogdan')
 }
 
-myFn(1, 2);
+console.log('Start');
 
-// const personOne = {
-//     name: 'Bob',
-//     age: 21
-// };
-
-// function increasePersonAge(person) {
-//     const updatedPerson = Object.assign({}, person);
-//     updatedPerson.age += 1;
-//     return updatedPerson;
-// }
-
-// const updatedPerson = increasePersonAge(personOne);
-// console.log(personOne.age);
-// console.log(updatedPerson.age);
+setTimeout(printMyName, 2000);
